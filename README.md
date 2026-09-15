@@ -1,20 +1,38 @@
-<<<<<<< HEAD
-# Word-Game
-=======
-# React + Vite
+# 🌍 Word Guessing Game
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+> Guess the word before the last language dies.
 
-Currently, two official plugins are available:
+## 🎮 About
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+A twist on the classic Hangman game. You're given a hidden word and must guess it letter by letter. But here's the catch — every wrong guess **kills a language**. Once all languages are extinct, the game is over.
 
-## React Compiler
+## 📖 How to Play
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+1. The game picks a random word.
+2. You guess one letter at a time.
+3. ✅ Correct guess → the letter is revealed.
+4. ❌ Wrong guess → a language dies (🪦).
+5. You have **N chances** (default: 10).
+6. Use all N → **Game Over**. The last language falls silent.
+7. Guess the full word → **You Win!**
 
-## Expanding the ESLint configuration
+## 🪦 The Languages
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
->>>>>>> 5dfb565 (feat: initialize word game project with React and Vite)
+Each mistake extinguishes a language from the list:
+
+| Mistake | Language Lost |
+|---------|---------------|
+| 1       | HTML          |
+| 2       | Python        |
+| 3       | CSS           |
+| 4       | Javascript    |
+| 5       | Java          |
+| 6       | **The last one** |
+
+> *"Every time a language dies, a library burns."*
+
+## 🚀 Getting Started
+
+```bash
+git clone https://github.com/yourusername/language-hangman.git
+cd word-game
